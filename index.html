@@ -20,7 +20,7 @@
         <nav class="header-list flex-header">
           <a href="./index.html" class="header-logo link"><span class="logo-decoration">WEB</span>STUDIO</a>
           
-          <button class="js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <button class="js-open-menu icon-menu" aria-expanded="false" aria-controls="mobile-menu">
               <svg class="icon-menu" width="32" height="22" aria-label="Mobile menu switch">
                 <use href="./images/icons.svg#menu"></use>
               </svg>
@@ -44,11 +44,11 @@
           <!-- mobile menu -->
           <div class="js-menu-container menu-container">
             <button class="js-close-menu menu-toggle" aria-expanded="false" aria-controls="mobile-menu">
-              <svg class="icone-close" width="8" height="8" aria-label="Mobile menu switch">
-                <use href="./images/icons.svg#icon-Vector"></use>
+              <svg width="8" height="8" aria-label="Mobile menu switch">
+                <use class="icone-close" href="./images/icons.svg#icon-Vector"></use>
               </svg>
             </button>
-
+            
             <ul class="menu-nav list">
               <li class="item"><a href="./index.html" class="link">Studio</a></li>
               <li class="item"><a href="./portfolio.html" class="link">Portfolio</a></li>
@@ -160,7 +160,7 @@
           <h2 class="section-title">What are we doing</h2>
           <ul class="list flex">
             <li>
-              <img width="360" height="300" src="./images/photo_1.jpeg" alt="monitor" />
+              <img srcset="./images/03_desktop/what-are-we-doing/desktop-app.jpg 1px, ./images/03_desktop/what-are-we-doing/desktop-app@2.jpg" scr="./images/03_desktop/what-are-we-doing/desktop-app.jpg" width="360" height="300" alt="monitor" />
             </li>
             <li>
               <img width="360" height="300" src="./images/photo_2.jpeg" alt="tabs on the device" />
@@ -378,7 +378,7 @@
         </div>
       </section>
 
-      <!-- <div data-modal class="backdrop is-hidden">
+      <div data-modal class="backdrop is-hidden">
         <div class="modal">
           <button data-modal-close type="button" class="modal-button">
             <svg class="modal-button-icon" width="8px" height="8px">
@@ -431,10 +431,10 @@
             <button class="form-button-send" type="submit">Send</button>
           </form>
         </div>
-      </div> -->
+      </div> 
     </main>
 
-    <!-- <footer class="footer">
+     <footer class="footer">
       <div class="container footer-box">
         <div class="footer-one">
           <a href="index.html" class="footer-logo link"><span class="logo-decoration">WEB</span>STUDIO</a>
@@ -476,7 +476,7 @@
           </ul>
         </div>
 
-        <div>
+        <div class="footer-form-box">
           <p class="footer-social-title">Subscribe</p>
           <form class="footer-form flex">
             <input class="footer-input-email" type="email" name="subscribe" id="subscribe" placeholder="E-mail" />
@@ -491,7 +491,7 @@
       </div>
     </footer>
 
-    <script src="./js/modal.js"></script> -->
+    <script src="./js/modal.js"></script> 
     <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
