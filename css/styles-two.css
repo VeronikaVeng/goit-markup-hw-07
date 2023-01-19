@@ -62,7 +62,6 @@ p {
 .container {
     position: relative;
 
-    outline: 2px solid tomato;
     padding-left: 16px;
     padding-right: 16px;
     margin-left: auto;
@@ -421,9 +420,10 @@ p {
     margin-right: auto;
     border: 1px solid #000000;
     /* phone screen */
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+    background-image: linear-gradient(
+            rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)),
-        url(/images/01_mobile/hero-bg-mobile.jpg);
+            url('../images/mobile/hero-mobile.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -433,17 +433,20 @@ p {
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
     .ovarley {
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)), url(/images/01_mobile/hero-bg-mobile@2x.jpg);
+        background-image: linear-gradient(
+            rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)), 
+            url('../images/mobile/hero-mobile@2x.jpg');
     }
 }
 
 /* screen >= 768 */
 @media screen and (min-width: 768px) {
     .ovarley {
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+        background-image: linear-gradient(
+            rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)),
-        url(/images/02_tablet/hero-bg-tablet.jpg);
+            url('../images/tablet/hero-tablet.jpg');
     }
 }
 
@@ -451,17 +454,20 @@ p {
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
     .ovarley {
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)), url(/images/02_tablet/hero-bg-tablet@2x.jpg);
+        background-image: linear-gradient(
+            rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)), 
+            url('../images/tablet/hero-tablet@2x.jpg');
     }
 }
 
 /* screen >= 1200 */
 @media screen and (min-width: 1200px) {
     .ovarley {
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+        background-image: linear-gradient(
+            rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)),
-        url(/images/03_desktop/hero-bg-desktop.jpg);
+            url('../images/desktop/hero-desk.jpg');
     }
 }
 
@@ -469,8 +475,10 @@ p {
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
     .ovarley {
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)), url(/images/03_desktop/hero-bg-desktop@2x.jpg);
+        background-image: linear-gradient(
+            rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)), 
+            url('../images/desktop/hero-desk@2x.jpg');
     }
 }
 
