@@ -423,7 +423,7 @@ p {
     background-image: linear-gradient(
             rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)),
-            url('../images/mobile/hero-mobile.jpg');
+            url("../images/mobile/hero-mobile.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -433,7 +433,25 @@ p {
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
     .ovarley {
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/mobile/hero-mobile@2x.jpg');
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/mobile/hero-mobile@2x.jpg");
+    }
+}
+
+/* screen >= 768 */
+@media screen and (min-width: 480px) and (max-width:1119px) {
+    .ovarley {
+        background-image: linear-gradient(
+            rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)),
+            url('../images/tablet/hero-tablet.jpg');
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width:1119px) and (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    .ovarley {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/tablet/hero-tablet@2x.jpg');
     }
 }
 
@@ -452,24 +470,6 @@ p {
   (min-resolution: 2dppx) {
     .ovarley {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/desktop/hero-desk@2x.jpg');
-    }
-}
-
-/* screen >= 768 */
-@media screen and (min-width: 768px) {
-    .ovarley {
-        background-image: linear-gradient(
-            rgba(46, 47, 66, 0.7),
-            rgba(46, 47, 66, 0.7)),
-            url('../images/tablet/hero-tablet.jpg');
-    }
-}
-
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-    .ovarley {
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/tablet/hero-tablet@2x.jpg');
     }
 }
 
