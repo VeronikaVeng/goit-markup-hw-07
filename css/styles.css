@@ -1362,6 +1362,10 @@ textarea {
 }
 
 @media screen and (max-width: 428px) {
+    .form-field-checkbox {
+        margin-bottom: 12px;
+    }
+
     .form-button-send {
         margin-left: 45px;
     }
