@@ -853,7 +853,8 @@ screen and (min-resolution: 2dppx) {
     }
 
     .customers-list {
-        justify-content: space-evenly;
+        justify-content: center;
+        column-gap: 24px;
     }
 
     .customers-item {
@@ -894,6 +895,7 @@ screen and (min-resolution: 2dppx) {
 }
 
 .footer-one {
+    margin-bottom: 72px;
     justify-content: center;
 }
 
@@ -916,13 +918,16 @@ screen and (min-resolution: 2dppx) {
 
 .footer-text {
     margin-top: 16px;
-    margin-bottom: 72px;
     width: 264px;
     text-align: start;
 
     color: var(--accent);
     font-size: 16px;
     line-height: 1.5;
+}
+
+.footer-social {
+    margin-bottom: 72px;
 }
 
 .footer-social-title {
@@ -938,7 +943,6 @@ screen and (min-resolution: 2dppx) {
 
 .footer-soc-item {
     display: inline-block;
-    margin-bottom: 72px;
     width: 40px;
     height: 40px;
 
@@ -1049,11 +1053,16 @@ screen and (min-resolution: 2dppx) {
         margin-right: 24px;
     }
 
+    .footer-social {
+        margin-bottom: 0;
+    }
+
     .footer-form-box {
         display: block;
     }
 
     .footer-input-email {
+        margin-bottom: 0;
         margin-right: 24px;
         width: 261px;
     }
@@ -1065,14 +1074,25 @@ screen and (min-resolution: 2dppx) {
     }
 
     .footer-one {
+        margin-bottom: 0;
         margin-right: 120px;
     }
 
+    .footer-text {
+        margin-bottom: 0;
+    }
+
     .footer-social {
+        margin-bottom: 0;
         margin-right: 80px;
     }
 
+    .footer-soc-item {
+        margin-bottom: 0;
+    }
+
     .footer-input-email {
+        margin-bottom: 0;
         margin-right: 24px;
         width: 264px; 
     }
@@ -1126,6 +1146,12 @@ screen and (min-resolution: 2dppx) {
         0px 1px 3px rgba(0, 0, 0, 0.12),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
+}
+
+@media screen and (max-width: 428px) {
+    .modal {
+        width: 300px;
+    }
 }
 
 @media screen and (min-width:768px) {
@@ -1333,6 +1359,18 @@ textarea {
     border-style: none;
 
     cursor: pointer;
+}
+
+@media screen and (max-width: 428px) {
+    .form-button-send {
+        margin-left: 45px;
+    }
+}
+
+@media screen and (orientation: landscape) {
+    .modal {
+        transform: translateX(-50%);
+    }
 }
 
 
