@@ -1185,6 +1185,17 @@ screen and (min-resolution: 2dppx) {
     fill: var(--background-color);
 }
 
+@media screen and (orientation: landscape) {
+    .backdrop {
+        overflow: auto;
+    }
+
+    .modal {
+        top: 10%;
+        transform: translateX(-50%);
+    }
+}
+
 /* modal-form */
 textarea {
     resize: none;
@@ -1371,11 +1382,7 @@ textarea {
     }
 }
 
-@media screen and (orientation: landscape) {
-    .modal {
-        transform: translateX(-50%);
-    }
-}
+
 
 
 
